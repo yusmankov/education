@@ -11,7 +11,5 @@ public class UserController {
     @PostMapping(value = "/users")
     public User createUser(@RequestBody User user){
         return new User(1L,"login","Ivan","Ivanov");
-        //test
-        //test2
     }
 }
