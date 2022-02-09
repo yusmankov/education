@@ -1,0 +1,248 @@
+POST http://localhost:8080/users
+
+<> 2022-02-09T204637.400.json
+
+###
+
+POST http://localhost:8080/users
+
+<> 2022-02-09T204635.400.json
+
+###
+
+POST http://localhost:8080/users/3
+
+<> 2022-02-09T204623.405.json
+
+###
+
+POST http://localhost:8080/users/2
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde3",
+  "firstName": "Ivan3",
+  "lastName": "Ivanov3"
+}
+
+<> 2022-02-09T204530.405.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde3",
+  "firstName": "Ivan3",
+  "lastName": "Ivanov3"
+}
+
+<> 2022-02-09T204517.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde3",
+  "firstName": "Ivan3",
+  "lastName": "Ivanov3"
+}
+
+<> 2022-02-09T204514.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde2",
+  "firstName": "Ivan2",
+  "lastName": "Ivanov2"
+}
+
+<> 2022-02-09T204501.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde2",
+  "firstName": "Ivan2",
+  "lastName": "Ivanov2"
+}
+
+<> 2022-02-09T204455.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+<> 2022-02-09T204444.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sde",
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sd",
+  "firstName": "sd",
+  "lastName": "sd"
+}
+
+<> 2022-02-09T192110.200.json
+
+###
+
+POST http://localhost:8080/users
+
+<> 2022-02-09T192057.400.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sd",
+  "firstName": "sd",
+  "lastName": "sd"
+}
+
+<> 2022-02-09T192031.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "login" : "sd",
+  "firstName": "sd",
+  "lastName": "sd"
+}
+
+###
+
+POST http://localhost:8080/users
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+ "id": 1,
+ "login" : "sd",
+ "firstName": "sd",
+ "lastName": "sd"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+ "id": 1,
+ "login" : "sd",
+ "firstName": "sd",
+ "lastName": "sd"
+}
+
+###
+
