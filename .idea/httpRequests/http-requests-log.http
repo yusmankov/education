@@ -1,4 +1,94 @@
 POST http://localhost:8080/users
+Content-Type: application/json
+{:
+"login": "i.ivan3",
+"firstName": "Ivan3",
+"lastName": "Ivanov3"
+}:
+
+<> 2022-02-10T134936.400.html
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+{:
+"login": "i.ivan3",
+"firstName": "Ivan3",
+"lastName": "Ivanov3"
+}:
+
+<> 2022-02-10T134919.400.html
+
+###
+
+DELETE http://localhost:8080/users/1
+
+###
+
+DELETE http://localhost:8080/users/2
+
+###
+
+DELETE http://localhost:8080/users/2
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-02-10T134847.200.json
+
+###
+
+GET http://localhost:8080/users/3
+
+###
+
+GET http://localhost:8080/users/2
+
+###
+
+GET http://localhost:8080/users/1
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+{:
+"login": "i.ivan3",
+"firstName": "Ivan3",
+"lastName": "Ivanov3"
+}:
+
+<> 2022-02-10T134827.400.html
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+{:
+"login": "i.ivan2",
+"firstName": "Ivan2",
+"lastName": "Ivanov2"
+}:
+
+<> 2022-02-10T134816.400.html
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+{:
+"login": "i.ivan",
+"firstName": "Ivan",
+"lastName": "Ivanov"
+}:
+
+<> 2022-02-10T134756.400.html
+
+###
+
+POST http://localhost:8080/users
 
 <> 2022-02-09T204637.400.json
 
