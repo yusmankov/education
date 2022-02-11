@@ -15,7 +15,7 @@ public class UserController {
 
     @PostMapping("/users")
     public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
+        return userService.createUser(user);//коммент для теста в git
     }
 
     @GetMapping("/users/{id}")
