@@ -3,18 +3,28 @@ package ru.rtech.education.dao.mapper;
 import org.apache.ibatis.annotations.*;
 import ru.rtech.education.model.User;
 
+import java.util.List;
+
 @Mapper
 public interface UserMapper {
 
-    //@Select("select * from user where id = #{id}")
-    //User getUserById(@Param("id") Long id);
+    @Results(id = "userResult", value = {
+            @Result(property = "id", column = "id", id = true),
+            @Result(property = "login", column = "login"),
+            @Result(property = "firstName", column = "firstname"),
+            @Result(property = "lastName", column = "lastname")
+    })
+    @Select("select * from users where id = #{id}")
+    User getUserById(@Param("id") Long id);
 
-//    @Select("select * from user")
-//    void getUserByAll();
+    @ResultMap("userResult")
+    @Select("select * from users")
+    List<User> getUserByAll();
 
     @Delete("delete from users where id = #{id}")
     void deleteUserById(@Param("id") Long id);
 
-    @Insert("insert into users values (#{id},#{login},#{firstName},#{lastName})")
-    void createUserBy(@Param("id") Long id, @Param("login") String login, @Param("firstName") String firstName, @Param("lastName") String lastName);
+    @Insert("insert into users values (#{user.id},#{user.login},#{user.firstName},#{user.lastName})")
+    @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
+    void createUserBy(@Param("user") User user);
 }

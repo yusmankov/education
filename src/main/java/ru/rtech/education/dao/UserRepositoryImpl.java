@@ -1,39 +1,36 @@
 package ru.rtech.education.dao;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import ru.rtech.education.dao.mapper.UserMapper;
 import ru.rtech.education.model.User;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
+@RequiredArgsConstructor
 public class UserRepositoryImpl implements UserRepository {
 
-    private final Map<Long, User> users = new ConcurrentHashMap<>();
-    private final AtomicLong sequence = new AtomicLong(0L);
+    private final UserMapper userMapper;
 
     @Override
     public List<User> getUser() {
-        return new ArrayList<>(users.values());
+        return userMapper.getUserByAll();
     }
 
     @Override
     public User getUser(Long id) {
-        return users.get(id);
+        return userMapper.getUserById(id);
     }
 
     @Override
-    public User createUser(User user) {
-        user.setId(sequence.getAndAdd(1));
-        users.put(user.getId(), user);
-        return user;
+    public void createUser(User user) {
+        userMapper.createUserBy(user);
     }
 
     @Override
     public void deleteUser(Long id) {
-        users.remove(id);
+        userMapper.deleteUserById(id);
     }
+
 }
