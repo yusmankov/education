@@ -1,9 +1,8 @@
 package ru.rtech.education.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -12,7 +11,14 @@ import lombok.Setter;
 public class User {
 
     private Long id;
+
+    @NotNull
     private String login;
+
+    @NotNull
     private String firstName;
+
+    @NonNull
     private String lastName;
+
 }

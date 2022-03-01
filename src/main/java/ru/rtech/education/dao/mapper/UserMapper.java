@@ -3,6 +3,7 @@ package ru.rtech.education.dao.mapper;
 import org.apache.ibatis.annotations.*;
 import ru.rtech.education.model.User;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Mapper
@@ -24,7 +25,13 @@ public interface UserMapper {
     @Delete("delete from users where id = #{id}")
     void deleteUserById(@Param("id") Long id);
 
-    @Insert("insert into users values (#{user.id},#{user.login},#{user.firstName},#{user.lastName})")
+
+    @Insert("insert into users(login,firstName,lastName) values (#{user.login},#{user.firstName},#{user.lastName})")
     @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
-    void createUserBy(@Param("user") User user);
+    void createUserBy (@Param("user") User user);
+
+    @ResultMap("userResult")
+    @Select("select * from users where login = #{login}")
+    User getUserByLogin(@Param("login") String login);
+
 }

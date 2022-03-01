@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.rtech.education.model.User;
 import ru.rtech.education.servise.UserService;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -14,7 +15,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/users")
-    public User createUser(@RequestBody User user) {
+    public User createUser(@RequestBody @Valid User user) {
         return userService.createUser(user);
     }
 
@@ -24,8 +25,8 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getUser() {
-        return userService.getUser();
+    public List<User> getUsers() {
+        return userService.getUsers();
     }
 
     @DeleteMapping("/users/{id}")

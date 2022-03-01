@@ -14,13 +14,18 @@ public class UserRepositoryImpl implements UserRepository {
     private final UserMapper userMapper;
 
     @Override
-    public List<User> getUser() {
+    public List<User> getUsers() {
         return userMapper.getUserByAll();
     }
 
     @Override
     public User getUser(Long id) {
         return userMapper.getUserById(id);
+    }
+
+    @Override
+    public User getUserByLogin(String login) {
+        return userMapper.getUserByLogin(login);
     }
 
     @Override
